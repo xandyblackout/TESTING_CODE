@@ -1,0 +1,27 @@
+body {font: 1em/150% Helvetica, Arial, sans-serif; padding: 1em; margin: 0 auto; max-width: 33em;}
+@media (min-width: 70em) { body {font-size: 130%;} }
+
+h1 {
+    font-size: 1.5em;
+    align-items: center;
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+  
+  p {
+    color: red;
+  }
+
+  .outer {
+    border: 0.5px solid black;
+  }
+  
+    .box {
+        margin: 50px;
+        width: 100px;
+        height: 250px;
+        background-color: rebeccapurple;
+        transform: rotate(0.0turn)
+  }
+  
