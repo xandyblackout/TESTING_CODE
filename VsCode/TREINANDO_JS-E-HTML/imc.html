@@ -1,0 +1,23 @@
+<script>
+
+    var pulaLinha = function() {
+        document.write("<br>");
+    }
+    var mostra = function(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+    var calculaIMC = function(altura, peso) {
+        var imc = peso / (altura * altura);
+        return imc.toFixed(2);
+    };
+
+
+    var peso = prompt("olá, qual é o seu peso?");
+    var altura = prompt("Agora, qual a sua Altura?");
+    var imc = calculaIMC(altura, peso);
+    mostra("Meu imc é " + Math.round(imc));
+    mostra("Ainda estou " + (Math.round(imc) - 18.5) + " pontos acima do limite da magreza.");
+   
+</script>

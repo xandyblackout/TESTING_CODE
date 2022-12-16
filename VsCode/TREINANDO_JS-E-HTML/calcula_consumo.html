@@ -1,0 +1,41 @@
+<h3>ÁLCOOL OU GASOLINA</h3>
+<br>
+<script>
+    var pulaLinha = function() {
+        document.write("<br>");
+    }
+    var tanque = 40;
+
+    var caminhoComGasolina = 480;
+    var caminhoComEtanol = 300;
+
+    var precoGasolina = 2.90;
+    var precoEtanol = 2.40;
+
+    var consumoDeGasolina = caminhoComGasolina / tanque;
+    var consumoDeEtanol = caminhoComEtanol / tanque;
+
+    var precoPorKmGasolina = precoGasolina / consumoDeGasolina;
+    var precoPorKmEtanol = precoEtanol / consumoDeEtanol;
+
+    var valorGastoTotalGasolina = caminhoComGasolina * precoGasolina;
+    var valorGastoTotalEtanol = caminhoComEtanol * precoEtanol;
+
+    document.write("Consumo de Gasolina é " + consumoDeGasolina + " Litros!");
+    pulaLinha();
+    document.write("Consumo de Etanol é " + consumoDeEtanol + " Litros!");
+    pulaLinha();
+    document.write("Valor pago por Km Gasolina: R$ " + precoPorKmGasolina + " ");
+    pulaLinha();
+    document.write("Valor pago por Km Etanol: R$ " + precoPorKmEtanol + " ");
+    pulaLinha();
+    document.write("Quanto que foi gasto de combustivel R$ " + valorGastoTotalGasolina);
+    pulaLinha();
+    document.write("Quanto que foi gasto de Etanol R$ " + valorGastoTotalEtanol);
+   /* if (precoPorKmGasolina < precoPorKmEtanol) {
+        document.write("valor da Gasolina compensa mais!!!");
+        else {
+        document.write("Valor do Etanol compensa mais");
+        }
+    }*/
+</script>

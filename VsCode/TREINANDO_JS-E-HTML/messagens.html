@@ -1,0 +1,22 @@
+<script>
+    var pulaLinha = function() {
+        document.write("<br>");
+    }
+    document.write("Olá Mundo!");
+    pulaLinha();
+    document.write("Esse é meu segundo programa");
+    pulaLinha();
+    console.log("Esta mensagem aparece apenas no log");
+
+    // esta função mostra uma frase no navegador e pula uma linha
+
+        var mostra = function(frase) {
+            document.write(frase);
+            pulaLinha();
+        };
+
+    // agora vamos colocar no navegador o ano em que nasci:
+    var ano = 2022;
+    mostra("Eu nasci em " + (ano - 38));
+
+</script>
